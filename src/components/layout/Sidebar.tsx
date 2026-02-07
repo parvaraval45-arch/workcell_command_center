@@ -131,6 +131,12 @@ export default function Sidebar({ collapsed, onToggle, mobileOpen, onMobileClose
                   onClick={() => {
                     setActiveItem(item.label);
                     onMobileClose();
+                    // Scroll to corresponding section
+                    const sectionId = item.section === 'overview' ? 'health-section' : `${item.section}-section`;
+                    const el = document.getElementById(sectionId);
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                   }}
                   className={`
                     flex items-center gap-3 py-[10px] rounded-[6px] text-[13px] font-medium
