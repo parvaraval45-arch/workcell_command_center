@@ -48,7 +48,7 @@ export default function Sidebar({ collapsed, onToggle, mobileOpen, onMobileClose
       {mobileOpen && (
         <div
           className="fixed inset-0 z-40 md:hidden"
-          style={{ background: 'rgba(0,0,0,0.5)' }}
+          style={{ background: 'rgba(0,0,0,0.15)' }}
           onClick={onMobileClose}
         />
       )}

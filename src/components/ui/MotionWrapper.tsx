@@ -122,7 +122,7 @@ export function StoppedVignette({ visible }: { visible: boolean }) {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 pointer-events-none z-[6]"
           style={{
-            background: 'radial-gradient(ellipse at center, transparent 50%, rgba(239, 68, 68, 0.15) 100%)',
+            background: 'radial-gradient(ellipse at center, transparent 50%, rgba(220, 38, 38, 0.06) 100%)',
           }}
         />
       )}

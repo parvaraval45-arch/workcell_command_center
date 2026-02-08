@@ -28,7 +28,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: Array<
       style={{
         background: 'var(--bg-tertiary)',
         border: '1px solid var(--border-accent)',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
       }}
     >
       <p className="font-metric text-[12px] mb-0.5" style={{ color: isOver ? 'var(--status-critical)' : 'var(--text-primary)' }}>

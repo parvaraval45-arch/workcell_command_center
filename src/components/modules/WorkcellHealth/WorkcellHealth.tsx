@@ -28,8 +28,8 @@ function getStatusConfig(status: SystemStatus, ivmConfidence: number): StatusCon
       return {
         color: 'var(--status-operational)',
         bg: 'var(--status-operational-bg)',
-        glow: '0 0 20px rgba(34, 197, 94, 0.15)',
-        borderColor: 'rgba(34, 197, 94, 0.25)',
+        glow: 'none',
+        borderColor: 'rgba(22, 163, 74, 0.2)',
         dotClass: 'status-dot-operational',
         label: 'Operational',
         reason: 'All systems nominal',
@@ -38,8 +38,8 @@ function getStatusConfig(status: SystemStatus, ivmConfidence: number): StatusCon
       return {
         color: 'var(--status-degraded)',
         bg: 'var(--status-degraded-bg)',
-        glow: '0 0 20px rgba(245, 158, 11, 0.2)',
-        borderColor: 'rgba(245, 158, 11, 0.3)',
+        glow: 'none',
+        borderColor: 'rgba(217, 119, 6, 0.25)',
         dotClass: 'status-dot-degraded',
         label: 'Degraded',
         reason: ivmConfidence < 0.65
@@ -50,8 +50,8 @@ function getStatusConfig(status: SystemStatus, ivmConfidence: number): StatusCon
       return {
         color: 'var(--status-critical)',
         bg: 'var(--status-critical-bg)',
-        glow: '0 0 24px rgba(239, 68, 68, 0.2)',
-        borderColor: 'rgba(239, 68, 68, 0.35)',
+        glow: 'none',
+        borderColor: 'rgba(220, 38, 38, 0.3)',
         dotClass: 'status-dot-critical',
         label: 'Stopped',
         reason: 'Cycle paused — operator review required',

@@ -149,7 +149,7 @@ export default function CameraFeed() {
         className="relative w-full overflow-hidden"
         style={{
           aspectRatio: '16 / 9',
-          background: '#080C14',
+          background: '#1E293B',
         }}
       >
         {/* Grid overlay — simulates workcell floor */}
@@ -217,7 +217,7 @@ export default function CameraFeed() {
               <div
                 className="absolute -top-[18px] left-0 flex items-center gap-1.5 px-1.5 py-0.5 rounded-[2px]"
                 style={{
-                  background: 'rgba(10, 14, 23, 0.85)',
+                  background: 'rgba(30, 41, 59, 0.85)',
                   borderBottom: `1px solid ${color}`,
                 }}
               >
@@ -279,19 +279,6 @@ export default function CameraFeed() {
           </span>
         </div>
 
-        {/* Crosshair center marker */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" style={{ opacity: 0.08 }}>
-          <svg width="40" height="40" viewBox="0 0 40 40">
-            <line x1="20" y1="0" x2="20" y2="16" stroke="#94A3B8" strokeWidth="0.5" />
-            <line x1="20" y1="24" x2="20" y2="40" stroke="#94A3B8" strokeWidth="0.5" />
-            <line x1="0" y1="20" x2="16" y2="20" stroke="#94A3B8" strokeWidth="0.5" />
-            <line x1="24" y1="20" x2="40" y2="20" stroke="#94A3B8" strokeWidth="0.5" />
-            <circle cx="20" cy="20" r="6" stroke="#94A3B8" strokeWidth="0.5" fill="none" />
-          </svg>
-        </div>
-
-        {/* Scan line animation */}
-        <div className="cam-scanline" />
       </div>
     </div>
   );

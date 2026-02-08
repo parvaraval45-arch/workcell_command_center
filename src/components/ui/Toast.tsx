@@ -102,7 +102,7 @@ export default function ToastContainer() {
             style={{
               background: 'var(--bg-secondary)',
               border: `1px solid ${config.color}`,
-              boxShadow: `0 4px 24px rgba(0,0,0,0.4), 0 0 12px ${config.color}22`,
+              boxShadow: `0 4px 24px rgba(0,0,0,0.08), 0 0 12px ${config.color}11`,
             }}
             role="alert"
             aria-live="assertive"

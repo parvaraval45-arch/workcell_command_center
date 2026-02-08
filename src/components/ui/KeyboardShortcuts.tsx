@@ -90,7 +90,7 @@ export default function KeyboardShortcuts({ onToggleSidebar }: KeyboardShortcuts
       {/* Overlay */}
       <div
         className="fixed inset-0 z-[90]"
-        style={{ background: 'rgba(0,0,0,0.5)' }}
+        style={{ background: 'rgba(0,0,0,0.2)' }}
         onClick={() => setHelpOpen(false)}
       />
 
@@ -100,7 +100,7 @@ export default function KeyboardShortcuts({ onToggleSidebar }: KeyboardShortcuts
         style={{
           background: 'var(--bg-secondary)',
           border: '1px solid var(--border-primary)',
-          boxShadow: '0 24px 64px rgba(0,0,0,0.5)',
+          boxShadow: '0 24px 64px rgba(0,0,0,0.1)',
         }}
       >
         {/* Header */}

@@ -1,6 +1,5 @@
 'use client';
 
-import { Sparkles } from 'lucide-react';
 import IVMConfidenceMonitor from './IVMConfidenceMonitor';
 import ForceProfile from './ForceProfile';
 import CameraFeed from './CameraFeed';
@@ -13,16 +12,13 @@ export default function AISkillObservability() {
     <section>
       {/* Section header */}
       <div className="flex items-center gap-3 mb-4">
-        <div className="flex items-center gap-2">
-          <Sparkles size={14} style={{ color: 'var(--accent-primary)' }} />
-          <h2
-            className="text-[14px] font-semibold uppercase tracking-wider"
-            style={{ color: 'var(--text-primary)' }}
-          >
-            AI Skill Performance
-          </h2>
-        </div>
-        <div className="flex-1 h-px" style={{ background: 'var(--accent-primary)', opacity: 0.3 }} />
+        <h2
+          className="text-[14px] font-semibold uppercase tracking-wider"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          AI Skill Performance
+        </h2>
+        <div className="flex-1 h-px" style={{ background: 'var(--border-primary)' }} />
       </div>
 
       {/* Top row: IVM + Force Profile (2 columns) */}

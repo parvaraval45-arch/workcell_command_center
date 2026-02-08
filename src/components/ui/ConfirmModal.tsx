@@ -39,7 +39,7 @@ export default function ConfirmModal({
     <div
       ref={overlayRef}
       className="fixed inset-0 z-[90] flex items-center justify-center"
-      style={{ background: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(4px)' }}
+      style={{ background: 'rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(4px)' }}
       onClick={(e) => {
         if (e.target === overlayRef.current) onCancel();
       }}
@@ -49,7 +49,7 @@ export default function ConfirmModal({
         style={{
           background: 'var(--bg-secondary)',
           border: '1px solid var(--border-accent)',
-          boxShadow: '0 16px 48px rgba(0, 0, 0, 0.5)',
+          boxShadow: '0 16px 48px rgba(0, 0, 0, 0.1)',
         }}
       >
         {/* Icon + title */}

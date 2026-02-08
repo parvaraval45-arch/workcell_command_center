@@ -59,7 +59,7 @@ export default function DebugPanel() {
       style={{
         background: 'var(--bg-secondary)',
         border: '1px solid var(--border-primary)',
-        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08)',
         width: minimized ? '260px' : '360px',
       }}
     >

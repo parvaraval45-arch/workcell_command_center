@@ -78,7 +78,7 @@ export default function OEEGauge() {
                 background: 'var(--bg-tertiary)',
                 border: '1px solid var(--border-accent)',
                 color: 'var(--text-secondary)',
-                boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
               }}
             >
               <span className="font-metric" style={{ color: 'var(--text-primary)' }}>

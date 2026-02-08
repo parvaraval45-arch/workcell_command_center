@@ -82,7 +82,7 @@ export default function SettingsPanel() {
       <div
         ref={overlayRef}
         className="fixed inset-0 z-[80]"
-        style={{ background: 'rgba(0,0,0,0.5)' }}
+        style={{ background: 'rgba(0,0,0,0.15)' }}
         onClick={(e) => { if (e.target === overlayRef.current) toggle(); }}
       />
 
@@ -93,7 +93,7 @@ export default function SettingsPanel() {
           width: 'min(420px, 90vw)',
           background: 'var(--bg-secondary)',
           borderLeft: '1px solid var(--border-primary)',
-          boxShadow: '-8px 0 32px rgba(0,0,0,0.4)',
+          boxShadow: '-8px 0 32px rgba(0,0,0,0.06)',
         }}
       >
         {/* Header */}
@@ -222,7 +222,7 @@ export default function SettingsPanel() {
                     border: '1px solid var(--accent-primary)',
                   }}
                 >
-                  Dark
+                  Light
                 </button>
                 <button
                   className="px-3 py-1.5 rounded-[4px] text-[11px] font-medium cursor-pointer relative"
@@ -232,7 +232,7 @@ export default function SettingsPanel() {
                     border: '1px solid var(--border-primary)',
                   }}
                 >
-                  Light
+                  Dark
                   <span
                     className="absolute -top-1.5 -right-1.5 text-[8px] font-semibold px-1 rounded"
                     style={{ background: 'var(--status-degraded-bg)', color: 'var(--status-degraded)' }}

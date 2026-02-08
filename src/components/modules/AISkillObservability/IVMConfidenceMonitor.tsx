@@ -16,9 +16,9 @@ function getConfidenceColor(val: number): string {
 }
 
 function getConfidenceGlow(val: number): string {
-  if (val >= HIGH_THRESHOLD) return 'rgba(34, 197, 94, 0.4)';
-  if (val >= LOW_THRESHOLD) return 'rgba(245, 158, 11, 0.4)';
-  return 'rgba(239, 68, 68, 0.4)';
+  if (val >= HIGH_THRESHOLD) return 'rgba(22, 163, 74, 0.15)';
+  if (val >= LOW_THRESHOLD) return 'rgba(217, 119, 6, 0.15)';
+  return 'rgba(220, 38, 38, 0.15)';
 }
 
 function getConfidenceLabel(val: number): string {
@@ -72,7 +72,6 @@ export default function IVMConfidenceMonitor() {
       className="card p-5 flex flex-col"
       style={{
         borderColor: isLow ? 'var(--status-critical)' : isMedium ? 'var(--status-degraded)' : undefined,
-        animation: isLow ? 'ivm-border-flash 1.5s ease-in-out infinite' : undefined,
       }}
     >
       {/* Header */}
@@ -100,7 +99,7 @@ export default function IVMConfidenceMonitor() {
           className="flex items-center gap-2 px-3 py-2 rounded-[4px] mb-4"
           style={{
             background: 'var(--status-critical-bg)',
-            border: '1px solid rgba(239, 68, 68, 0.3)',
+            border: '1px solid rgba(220, 38, 38, 0.2)',
           }}
         >
           <AlertTriangle size={14} style={{ color: 'var(--status-critical)', flexShrink: 0 }} />
@@ -115,7 +114,7 @@ export default function IVMConfidenceMonitor() {
         <AnimatedNumber
           value={confidence}
           decimals={2}
-          className={`text-[36px] font-bold leading-none transition-colors duration-300 ${isLow ? 'ivm-shake' : ''}`}
+          className="text-[36px] font-bold leading-none transition-colors duration-300"
           style={{ color }}
         />
       </div>

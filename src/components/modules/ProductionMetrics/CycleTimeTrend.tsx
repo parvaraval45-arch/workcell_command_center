@@ -27,7 +27,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: Array<
       style={{
         background: 'var(--bg-tertiary)',
         border: '1px solid var(--border-accent)',
-        boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
       }}
     >
       <p className="font-metric text-[12px] mb-1" style={{ color: 'var(--text-primary)' }}>
