@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import {
   LayoutDashboard,
   BarChart3,
-  Brain,
+  Cpu,
   AlertTriangle,
   Settings,
   ChevronLeft,
@@ -18,7 +18,7 @@ import { useSettingsStore } from '@/store/settingsStore';
 const navItems = [
   { label: 'Overview', icon: LayoutDashboard, section: 'overview' },
   { label: 'Production', icon: BarChart3, section: 'production' },
-  { label: 'AI Skills', icon: Brain, section: 'skills' },
+  { label: 'AI Skills', icon: Cpu, section: 'skills' },
   { label: 'Incidents', icon: AlertTriangle, section: 'incidents' },
 ];
 
